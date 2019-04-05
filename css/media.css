@@ -1,0 +1,6 @@
+@media (max-width:1399px){
+    .preview_blk  iframe {
+        height: 185px;
+        width: 100%;
+    }
+}

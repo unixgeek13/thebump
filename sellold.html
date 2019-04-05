@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Matrix</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body>
+    <div class="mainsectionPage">
+        <header class="">
+            <div class="row">   
+                <div class="logoMain_blk">
+                    <div class="logo">
+                        <!-- <h5>Content Marketplace</h5> -->
+                        <img src="img/logo.png" class="img-fluid logoImg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-7">
+                            <ul class="nav topNav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">
+                                        <!-- <i class="svgIcon iz-26">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                <path
+                                                    style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"
+                                                    d="M 3 1 L 3 2 L 2.5 2 C 1.6774686 2 1 2.6774686 1 3.5 L 1 12.5 C 1 13.322531 1.6774686 14 2.5 14 L 12.5 14 C 13.322531 14 14 13.322531 14 12.5 L 14 3.5 C 14 2.6774686 13.322531 2 12.5 2 L 12 2 L 12 1 L 11 1 L 11 2 L 4 2 L 4 1 L 3 1 z M 2.5 3 L 3 3 L 3 4 L 4 4 L 4 3 L 11 3 L 11 4 L 12 4 L 12 3 L 12.5 3 C 12.781469 3 13 3.2185314 13 3.5 L 13 5 L 2 5 L 2 3.5 C 2 3.2185314 2.2185314 3 2.5 3 z M 2 6 L 13 6 L 13 12.5 C 13 12.781469 12.781469 13 12.5 13 L 2.5 13 C 2.2185314 13 2 12.781469 2 12.5 L 2 6 z M 8 8 L 8 8.5 L 8 11 L 11 11 L 11 8 L 8 8 z M 9 9 L 10 9 L 10 10 L 9 10 L 9 9 z"
+                                                    font-weight="400" font-family="sans-serif" white-space="normal"
+                                                    overflow="visible" />
+                                            </svg>
+                                        </i> -->
+                                        All Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <!-- <i class="svgIcon iz-26">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                <path
+                                                    style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"
+                                                    d="M 3 1 L 3 2 L 2.5 2 C 1.6774686 2 1 2.6774686 1 3.5 L 1 12.5 C 1 13.322531 1.6774686 14 2.5 14 L 7.7617188 14 C 8.5704696 15.204592 9.94479 16 11.5 16 C 13.979359 16 16 13.979359 16 11.5 C 16 9.94479 15.204592 8.5704696 14 7.7617188 L 14 3.5 C 14 2.6774686 13.322531 2 12.5 2 L 12 2 L 12 1 L 11 1 L 11 2 L 4 2 L 4 1 L 3 1 z M 2.5 3 L 3 3 L 3 4 L 4 4 L 4 3 L 11 3 L 11 4 L 12 4 L 12 3 L 12.5 3 C 12.781469 3 13 3.2185314 13 3.5 L 13 5 L 2 5 L 2 3.5 C 2 3.2185314 2.2185314 3 2.5 3 z M 2 6 L 13 6 L 13 7.2753906 C 12.528582 7.1071101 12.028145 7 11.5 7 C 10.175756 7 8.9944655 7.5870768 8.1699219 8.5019531 L 7.5 7 L 6.7363281 8.7128906 L 4.8710938 8.9101562 L 6.2636719 10.164062 L 5.8769531 12 L 7.015625 11.341797 C 7.0137098 11.395546 7 11.445796 7 11.5 C 7 12.028145 7.1071101 12.528582 7.2753906 13 L 2.5 13 C 2.2185314 13 2 12.781469 2 12.5 L 2 6 z M 11.5 8 C 13.438919 8 15 9.5610811 15 11.5 C 15 13.438919 13.438919 15 11.5 15 C 9.5610811 15 8 13.438919 8 11.5 C 8 9.5610811 9.5610811 8 11.5 8 z M 13.001953 9.8613281 L 11.160156 11.703125 L 10.013672 10.556641 L 9.3066406 11.263672 L 11.160156 13.117188 L 13.708984 10.568359 L 13.001953 9.8613281 z" />
+                                            </svg>
+
+
+                                        </i> -->
+                                        Upcoming Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <!-- <i class="svgIcon iz-26">
+                                            <svg enable-background="new 0 0 50 50" version="1.1" viewBox="0 0 50 50"
+                                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="m16.37-0.23c1 0.48 1.38 1.09 1.21 1.9-0.16 0.76-0.81 1.29-1.56 1.28-0.74 0-1.37-0.51-1.55-1.24-0.17-0.71 0.18-1.44 0.86-1.78 0.12-0.06 0.23-0.11 0.35-0.16h0.69z" />
+                                                <path
+                                                    d="m12.06 38.57c-0.54 2.49-1.08 4.98-1.63 7.53 1.14 0.25 2.25 0.49 3.35 0.73 0.22 0.05 0.45 0.09 0.67 0.15 0.79 0.22 1.27 0.94 1.09 1.65-0.2 0.81-0.92 1.26-1.75 1.09-2.11-0.45-4.23-0.91-6.34-1.37-1.41-0.31-2.83-0.61-4.24-0.92-0.91-0.2-1.41-0.87-1.25-1.67 0.17-0.84 0.88-1.27 1.82-1.08 1.27 0.26 2.54 0.54 3.88 0.83 0.55-2.54 1.1-5.06 1.63-7.52-0.9-0.52-1.81-0.96-2.62-1.53-3.48-2.46-5.01-7.11-3.74-11.18 1.48-4.78 2.96-9.56 4.44-14.34 0.05-0.17 0.11-0.34 0.18-0.57 4.85 1.05 9.68 2.09 14.61 3.16-0.38-1.58-0.75-3.08-1.13-4.65 5.69-1.89 11.37-3.78 17.09-5.69 0.08 0.17 0.15 0.32 0.22 0.48 2 4.62 4 9.24 6.01 13.86 1.78 4.1 0.49 9.18-3.04 11.93-0.52 0.41-1.12 0.72-1.66 1.11-0.12 0.08-0.25 0.32-0.21 0.43 0.77 2.36 1.56 4.71 2.36 7.12 0.54-0.18 1.06-0.34 1.58-0.52 0.71-0.24 1.42-0.48 2.13-0.71 0.94-0.31 1.73 0.03 1.99 0.84s-0.17 1.53-1.12 1.85l-9.48 3.15c-0.32 0.11-0.65 0.23-0.98 0.29-0.79 0.13-1.43-0.29-1.62-1.05-0.17-0.68 0.19-1.37 0.9-1.63 1.16-0.41 2.34-0.79 3.51-1.18 0.12-0.04 0.24-0.09 0.41-0.15-0.82-2.46-1.63-4.9-2.45-7.36-3.12 0.51-5.92-0.15-8.38-2.09-2.47-1.94-3.57-4.61-4.01-7.63-0.05 0.01-0.09 0.01-0.14 0.02l-0.27 1.92c-0.27 2.05-0.51 4.1-0.82 6.14-0.66 4.29-4.52 7.94-8.85 8.42-0.68 0.09-1.38 0.1-2.14 0.14zm12.35-27.84c0.03 0.15 0.04 0.23 0.06 0.31 0.67 2.73 1.34 5.46 2.01 8.19 0.4 1.61 0.68 3.26 1.23 4.81 1.26 3.57 4.84 5.54 8.56 4.83 4.65-0.88 7.35-5.97 5.48-10.3-1.65-3.82-3.31-7.63-4.96-11.44-0.06-0.14-0.14-0.28-0.21-0.44-4.08 1.34-8.11 2.69-12.17 4.04zm-2.37 5.65c-4.2-0.91-8.36-1.81-12.55-2.71l-0.17 0.51c-0.74 2.37-1.47 4.74-2.21 7.12-0.56 1.81-1.25 3.6-1.65 5.45-1.15 5.35 3.94 10.15 9.24 8.7 3.12-0.86 5.11-2.92 5.62-6.18 0.47-3.02 0.82-6.05 1.22-9.08 0.17-1.26 0.33-2.51 0.5-3.81z" />
+                                                <path
+                                                    d="m16.8 8.57c-0.88-0.01-1.58-0.71-1.58-1.58 0-0.89 0.72-1.59 1.63-1.58 0.87 0.01 1.57 0.73 1.56 1.6-0.02 0.87-0.73 1.56-1.61 1.56z" />
+                                                <path
+                                                    d="m22.18 2.56c0.87 0 1.59 0.7 1.6 1.56 0.01 0.89-0.72 1.61-1.61 1.6-0.87-0.01-1.58-0.72-1.58-1.59 0-0.85 0.71-1.56 1.59-1.57z" />
+                                                <path
+                                                    d="m27.41 14.86c0.86-0.57 1.44-0.51 2.08 0.24 0.41 0.49 0.75 1.02 1.13 1.53 1.26 1.7 2.39 2.09 4.44 1.61 0.82-0.19 1.67-0.41 2.49-0.35 1.73 0.12 3.1 1.29 3.13 3.66 0.03 2.86-2.03 5.3-4.92 5.81-2.7 0.48-5.54-1.18-6.39-3.83-0.37-1.15-0.55-2.37-0.82-3.56-0.39-1.69-0.76-3.38-1.14-5.11z" />
+                                                <path
+                                                    d="m10.97 24.83c0.44 0.06 1.11 0.16 1.79 0.24 1.4 0.16 2.52-0.34 3.32-1.51 0.35-0.52 0.65-1.09 0.98-1.63 0.2-0.32 0.36-0.69 0.63-0.92 0.28-0.23 0.67-0.42 1.02-0.44 0.68-0.04 0.79 0.16 0.72 0.83-0.27 2.47-0.57 4.94-0.8 7.42-0.26 2.82-2.46 5.08-5.22 5.32-2.94 0.25-5.55-1.61-6.22-4.44-0.27-1.14-0.35-2.29 0.35-3.34s1.76-1.55 3.43-1.53z" />
+                                            </svg>
+
+                                        </i> -->
+                                        Happening Now!</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="sell.html">
+                                        <!-- <i class="svgIcon iz-26">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                viewBox="0 0 50 50">
+                                                <path
+                                                    style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans"
+                                                    d="M 12 0 C 10.906937 0 10 0.9069372 10 2 L 10 22 C 10 23.093063 10.906937 24 12 24 L 42 24 C 43.093063 24 44 23.093063 44 22 L 44 2 C 44 0.9069372 43.093063 0 42 0 L 12 0 z M 12 2 L 42 2 L 42 22 L 12 22 L 12 2 z M 22.5 4 C 21.130937 4 20 5.1309372 20 6.5 C 20 7.8690628 21.130937 9 22.5 9 L 31.5 9 C 32.869063 9 34 7.8690628 34 6.5 C 34 5.1309372 32.869063 4 31.5 4 L 22.5 4 z M 22.5 6 L 31.5 6 C 31.786937 6 32 6.2130628 32 6.5 C 32 6.7869372 31.786937 7 31.5 7 L 22.5 7 C 22.213063 7 22 6.7869372 22 6.5 C 22 6.2130628 22.213063 6 22.5 6 z M 13.46875 28 C 10.631832 28 9.3259763 28.688779 7.90625 29.25 C 5.1994441 30.322625 0.5625 32.5625 0.5625 32.5625 A 1.0001 1.0001 0 1 0 1.4375 34.34375 C 1.4375 34.34375 6.1090559 32.103125 8.65625 31.09375 C 10.216524 30.476971 10.923668 30 13.46875 30 C 19.085401 30 18.91785 32.525424 21.21875 33.90625 C 22.046021 34.402362 23.346171 34.786534 24.8125 35.15625 A 1.0054782 1.0054782 0 0 0 25.21875 35.28125 C 25.228913 35.283727 25.239823 35.278775 25.25 35.28125 C 26.904062 35.683457 28.658033 36 30 36 C 30.58437 36 31.091611 36.065731 31.5 36.15625 A 1.0099602 1.0099602 0 0 0 31.5625 36.15625 C 31.939421 36.24534 32.229815 36.369542 32.4375 36.5 C 32.876645 36.775851 33 37.003473 33 37.5 C 33 38.08208 32.875794 38.271113 32.4375 38.53125 C 31.999206 38.791387 31.150562 39 30 39 L 24.1875 39 C 21.73878 39 18.28125 38.03125 18.28125 38.03125 A 1.0087508 1.0087508 0 1 0 17.71875 39.96875 C 17.71875 39.96875 21.24422 41 24.1875 41 L 30 41 C 31.353438 41 32.501794 40.805363 33.4375 40.25 C 33.70826 40.089298 33.944923 39.889025 34.15625 39.65625 A 1.001098 1.001098 0 0 0 34.40625 39.53125 L 43.40625 33.46875 C 44.966641 32.542768 46.046747 32.300291 46.6875 32.3125 C 47.328253 32.32471 47.545446 32.513951 47.75 32.78125 C 48.046535 33.169121 48.067839 33.386614 47.875 33.84375 C 47.682161 34.300886 47.152447 34.941039 46.1875 35.625 C 44.986811 36.47693 31.771644 45.257656 30.21875 46.15625 C 29.069618 46.822218 28.152918 47.543006 27.09375 47.84375 C 26.034582 48.144494 24.768081 48.122487 22.71875 47.125 C 21.352111 46.459299 15.563195 43.43724 13.6875 42.46875 C 12.651166 41.933123 11.798935 41.637213 10.90625 41.6875 C 10.013565 41.73779 9.2321592 42.148669 8.4375 42.65625 L 5.75 44.40625 A 1.0054782 1.0054782 0 1 0 6.84375 46.09375 L 9.53125 44.34375 C 10.228591 43.898331 10.623435 43.708713 11 43.6875 C 11.376565 43.66629 11.888584 43.788627 12.78125 44.25 C 14.639555 45.20951 20.340389 48.205201 21.84375 48.9375 C 24.205419 50.087013 26.102668 50.182256 27.625 49.75 C 29.147332 49.317744 30.236882 48.444032 31.21875 47.875 C 33.301856 46.669594 45.838439 38.31807 47.34375 37.25 C 48.490803 36.436961 49.300339 35.585614 49.71875 34.59375 C 50.137161 33.601886 50.008215 32.431629 49.34375 31.5625 C 48.821304 30.879799 47.901747 30.335041 46.71875 30.3125 C 45.885031 30.29661 44.878397 30.602762 43.78125 31.09375 C 43.73961 30.892069 43.83945 30.6628 43.75 30.46875 C 43.410038 29.731259 42.632838 29.231205 41.78125 29.0625 C 40.667538 28.842336 39.405015 29.178033 38.15625 29.75 C 38.06707 29.476788 37.994176 29.185278 37.8125 28.96875 C 37.276219 28.329589 36.498966 28.118141 35.78125 28.0625 C 34.345817 27.951217 32.86048 28.419896 31.78125 29.0625 C 30.284585 29.953165 25.814445 32.772916 25.15625 33.1875 C 23.820756 32.828699 22.606378 32.401219 22.25 32.1875 C 21.3349 31.638326 19.774099 28 13.46875 28 z M 35.625 30.0625 C 36.024659 30.09348 36.225562 30.214879 36.28125 30.28125 C 36.324243 30.332488 36.405227 30.421599 36.375 30.71875 L 31.4375 34.09375 C 30.98558 34.025303 30.514263 34 30 34 C 29.473224 34 28.754575 33.906847 27.96875 33.78125 C 29.707033 32.688856 31.860083 31.348033 32.8125 30.78125 C 33.48327 30.381854 34.825683 30.000533 35.625 30.0625 z M 40.75 31 C 41.015028 30.974669 41.232864 30.965724 41.40625 31 C 41.821662 31.08229 41.871462 31.169241 41.9375 31.3125 C 41.986232 31.418213 42.007906 31.686278 41.96875 32.03125 L 34.90625 36.78125 C 34.735296 36.057676 34.315643 35.418452 33.71875 34.96875 L 37.84375 32.125 A 1.0001 1.0001 0 0 0 38.15625 31.875 C 39.049769 31.330966 40.04053 31.067811 40.75 31 z"
+                                                    overflow="visible" enable-background="accumulate"
+                                                    font-family="Bitstream Vera Sans" />
+                                            </svg>
+                                        </i> -->
+                                        Sell</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-5">
+                            <div class="rightNav">
+                                <ul class="nav justify-content-end">
+                                    <li class="nav-item">
+                                        <input type="search" class="form-control" placeholder="Quick search">
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" href="#"></a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Logout</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="dropdown-menu  dropdown-menu-right">
+                                            <a class="dropdown-item" href="#"><i class="fa fa-user-circle-o link-blue" aria-hidden="true"></i> Chris Perry</a>
+                                            <!-- <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid"> 
+            <div class="row d-flex align-items-stretch mainSection_blk">
+
+                <section class="col mainSectionInner_blk">
+                    <div class="resizableArea_blk">
+                            <div class="resizable">
+                                    <div class="pane-header">
+                                        <span class="align-self-center no-select pr-4"><h5 class="nowrap">Cover an Event</h5></span>
+                                        <div class="ml-auto align-self-center"><i class="icofont-thin-right text-link"></i><i class="icofont-thin-left text-link"></i></div>
+                                    </div>
+                                    <ul class="d-flex flex-wrap list-inline event_js">
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/003.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/004.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/005.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/006.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/007.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/008.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/008.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/008.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                        <li class="panle_blk d-flex ">
+                                            <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                                <!-- <div class="topPanel d-flex">
+                                                    <div class="d-flex mr-auto">Affiliate2-Unit1</div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                                    </div>
+                                                </div> -->
+                                                <div class="d-flex flex-column centerPanel">
+                                                    <!-- <div class="statusLabal live">LIVE</div> -->
+                                                    <div class="imgPreview">
+                                                        <img src="img/008.jpg" alt="" class="img-responsive">
+                                                    </div>
+                                                    <div class="panelCont">
+                                                        <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="bottomPanel mt-auto d-flex">
+                                                    <div class="bottomPanelCont">
+                                                        <p>Boston, MA</p>
+                                                        <p>Health</p>
+                                                    </div>
+                                                </div> -->
+        
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                        <div class="resizable">
+                            <div class="pane-header">
+                                <span class="align-self-center no-select pr-4"><h5 class="nowrap">Your Live Content</h5></span>
+                                <div class="ml-auto align-self-center">
+                                    <div class="search-box">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search..."
+                                                aria-label="search" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-regular border-0 btn-secondary"><i
+                                                        class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="d-flex flex-wrap list-inline">
+                                <li class="panle_blk d-flex addPanel_blk">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk " data-toggle="modal"
+                                        data-target="#exampleModal1">
+                                        <div class="d-flex centerPanel align-items-center ">
+                                            <div class="col">
+                                                <div class="imgPreview">
+                                                    <i class="icofont-plus"></i>
+                                                </div>
+                                                <div class="panelCont text-center">
+                                                    <strong>Add Scheduled Event</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <div class="topPanelUnitChanal">
+                                                    <p>Affiliate2-Unit5</p>
+                                                    <p>Curator_Local_Channel_2</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <!-- <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel">
+                                            <div class="centerPanelrTop">
+                                                <p class="text-white">7.2 Mbps</p>
+                                                <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="imgPreview">
+                                                <img src="img/003.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="panelCont">
+                                                <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex mr-auto align-items-center">
+                                                    <div class="date_blk">
+                                                        <p class="mb-0 pnlDate">January 1 at 13:00 GMT -05:00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ml-auto align-items-center">
+                                                    <span class="icon_blk">
+                                                        <div class="sellIcon">
+                                                            <i class="icofont-money"  data-toggle="tooltip" data-placement="top" title="Sell"></i>
+                                                        </div>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont ">
+                                                <div class="d-flex align-items-center">
+
+                                                    <div class="d-flex mr-auto align-items-center">
+                                                    </div>
+                                                    <div class="d-flex ml-auto align-items-center">
+                                                        <span class="icon_blk">
+                                                            <div class="sellIcon">
+                                                                <i class="icofont-money"></i>
+                                                            </div>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </li>
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <div class="topPanelUnitChanal">
+                                                    <p>Affiliate2-Unit6</p>
+                                                    <p>Curator_Local_Channel_3</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <!-- <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel">
+                                            <div class="centerPanelrTop">
+                                                <p class="text-white">7.2 Mbps</p>
+                                                <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="imgPreview">
+                                                <img src="img/001.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            
+                                            <div class="panelCont">
+                                                    <strong>Flu outbreak press conference with Governer Baker</strong>
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex mr-auto align-items-center">
+                                                    <div class="date_blk">
+                                                        <p class="mb-0 pnlDate">March 15 at 13:00 GMT -05:00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ml-auto align-items-center">
+                                                    <span class="icon_blk">
+                                                        <div class="sellIcon">
+                                                            <i class="icofont-money"  data-toggle="tooltip" data-placement="top" title="Sell"></i>
+                                                        </div>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont ">
+                                                <div class="d-flex align-items-center">
+
+                                                    <div class="d-flex mr-auto align-items-center">
+                                                    </div>
+                                                    <div class="d-flex ml-auto align-items-center">
+                                                        <span class="icon_blk">
+                                                            <div class="sellIcon">
+                                                                <i class="icofont-money"></i>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </li>
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <div class="topPanelUnitChanal">
+                                                    <p>Affiliate2-Unit7</p>
+                                                    <p>Curator_Local_Channel_4</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <!-- <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel  mb-2">
+                                            <div class="centerPanelrTop">
+                                                <p class="text-white">7.2 Mbps</p>
+                                                <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="imgPreview">
+                                                <img src="img/002.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="panelCont">
+                                                    <strong>Flu outbreak press conference with Governer Baker</strong>
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex mr-auto align-items-center">
+                                                    <div class="date_blk">
+                                                        <p class="mb-0 pnlDate">April 11 at 13:00 GMT -05:00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ml-auto align-items-center">
+                                                    <span class="icon_blk">
+                                                        <div class="sellIcon">
+                                                            <i class="icofont-money"  data-toggle="tooltip" data-placement="top" title="Sell"></i>
+                                                        </div>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont ">
+                                                <div class="d-flex align-items-center">
+
+                                                    <div class="d-flex mr-auto align-items-center">
+                                                    </div>
+                                                    <div class="d-flex ml-auto align-items-center">
+                                                        <span class="icon_blk">
+                                                            <div class="sellIcon">
+                                                                <i class="icofont-money"></i>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </li>
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <div class="topPanelUnitChanal">
+                                                    <p>Affiliate2-Unit8</p>
+                                                    <p>Curator_Local_Channel_5</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <!-- <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span> -->
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel">
+                                            <div class="centerPanelrTop">
+                                                <p class="text-white">7.2 Mbps</p>
+                                                <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="imgPreview">
+                                                <img src="img/004.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="panelCont">
+                                                <strong>Flu outbreak press conference with Governer Baker</strong>
+                                            </div>
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex mr-auto align-items-center">
+                                                    <div class="date_blk">
+                                                        <p class="mb-0 pnlDate">July 21 at 13:00 GMT -05:00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ml-auto align-items-center">
+                                                    <span class="icon_blk">
+                                                        <div class="sellIcon">
+                                                            <i class="icofont-money"  data-toggle="tooltip" data-placement="top" title="Sell"></i>
+                                                        </div>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont ">
+                                                <div class="d-flex align-items-center">
+
+                                                    <div class="d-flex mr-auto align-items-center">
+                                                    </div>
+                                                    <div class="d-flex ml-auto align-items-center">
+                                                        <span class="icon_blk">
+                                                            <div class="sellIcon">
+                                                                <i class="icofont-money"></i>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="resizable">
+                            <div class="pane-header">
+                                <span class="align-self-center no-select pr-4"><h5 class="nowrap">Your Marketplace</h5></span>
+                                <div class="ml-auto align-self-center">
+                                    <div class="search-box hide">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search..."
+                                                aria-label="search" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-regular border-0 btn-secondary"><i
+                                                        class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="d-flex flex-wrap list-inline">
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <span class="topTitle">Affiliate2-Unit1</span>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <div class="statusLabal live">LIVE</div>
+                                                <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel">
+                                            <div class="imgPreview">
+                                                <img src="img/004.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="panelCont">
+                                                <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                <p class="pnlDate">March 21 at 13:00 GMT -05:00</p>
+                                                <p> <span class="badge badge-secondary mr-1">Health</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont">
+                                                <div class="bottomInnerPanel d-flex">
+                                                    <div class="d-flex mr-auto  align-items-start">
+                                                        <span class="icon_blk d-flex align-items-center">
+                                                            <i class="fa fa-usd text-link " aria-hidden="true"></i>
+                                                            <span class=""> 350 </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk d-flex align-items-center">
+                                                            <i class="fa fa-address-card-o text-link" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Buyers"></i>
+                                                            <span>
+                                                                <p>3</p>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="panle_blk d-flex ">
+                                    <div class="d-flex flex-column align-items-stretch panleInner_blk ">
+                                        <div class="topPanel d-flex">
+                                            <div class="d-flex mr-auto">
+                                                <span class="topTitle">Halifax Donates the Christmas tree for 50th
+                                                    Year</span>
+                                            </div>
+                                            <div class="d-flex ml-auto">
+                                                <span class="icon_blk text-link"><i class="icofont-link-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column centerPanel">
+                                            <div class="imgPreview">
+                                                <img src="img/001.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="panelCont">
+                                                <strong>Flu outbreak press conference with Governer Baker</strong>
+                                                <p class="pnlDate">January 1 at 13:00 GMT -05:00</p>
+                                                <p> <span class="badge badge-secondary mr-1">Public interest</span>  <span class="badge badge-secondary">kickers</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="bottomPanel mt-auto d-flex">
+                                            <div class="bottomPanelCont">
+                                                <div class="bottomInnerPanel d-flex">
+                                                    <div class="d-flex mr-auto  align-items-start">
+                                                        <span class="icon_blk d-flex align-items-center">
+                                                            <i class="fa fa-usd text-link " aria-hidden="true"></i>
+                                                            <span class=""> 350 </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex ml-auto">
+                                                        <span class="icon_blk d-flex align-items-center mr-2">
+                                                            <i class="fa fa-address-card-o text-link" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Buyers"></i>
+                                                            <span>
+                                                                <p>3</p>
+                                                            </span>
+                                                        </span>
+                                                        <span class="icon_blk d-flex align-items-center">
+                                                            <i class="fa fa-thumbs-o-up text-link" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Interested"></i>
+                                                            <span>
+                                                                <p>2</p>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered modal-xxl" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close_blk" data-dismiss="modal" aria-label="Close">
+                                <i class="icofont-close-line"></i>
+                            </button>
+                            <div class="modal-body px-4 py-4">
+                                <div class="row">
+                                    <div class="col-5 border-right">
+                                        <h5>Build Your Listing</h5>
+                                        <div class="container pt-3">
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Title:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-start form-group">
+                                                <div class="pr-0 col-sm-4">Description:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <textarea name="" id="" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Location:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Restrictions:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Tags:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Language:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Quality:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Expected Start:</div>
+                                                <div class="pl-0 col-sm-4">
+                                                    <div class="input-group mb-0">
+                                                        <input type="date" class="form-control" aria-label="Select Date">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-calendar text-link" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pl-0 col-sm-4">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Expected End:</div>
+                                                <div class="pl-0 col-sm-4">
+                                                    <div class="input-group mb-0">
+                                                        <input type="date" class="form-control" aria-label="Select Date">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-calendar text-link" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pl-0 col-sm-4">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Expected Duration:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Upload Image:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFileLang"
+                                                            lang="es">
+                                                        <label class="custom-file-label" for="customFileLang">
+                                                            <!-- <i class="fa fa-upload text-link" aria-hidden="true"></i> -->
+                                                            Select Images..
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Price (USD):</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <div class="input-group mb-0">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-usd text-link" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input type="number" class="form-control" aria-label="Select Date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-end form-group">
+                                                <div class="col-11 text-right">
+                                                    <a href="" class="btn btn-info">Cancle</a>
+                                                    <a href="" class="btn btn-secondary">Post Listing</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h5>Listing Preview</h5>
+                                        <div class="px-3 py-3 border">
+                                            <div class="row">
+                                                <div class="col-6 pr-4">
+                                                    <div class="leftPanelPopup">
+                                                        <ul class="d-flex row rightPanelPopupTime">
+                                                            <li
+                                                                class="col-6 d-flex  flex-column px-2 py-2 border-right border-bottom">
+                                                                <div class="py-2 icofont_blk d-flex">
+                                                                    <i class="icofont-ui-calendar text-link"></i>
+                                                                    <span>Tuesday,
+                                                                        January 08</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2 border-bottom">
+                                                                <div class="py-2 icofont_blk d-flex">
+                                                                    <i class="icofont-wall-clock text-link"></i><span>Start
+                                                                        21:00 GMT -05:00 Expected Duration: 15
+                                                                        minutes</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2 border-right">
+                                                                <div
+                                                                    class="text-center flex-wrap justify-content-center d-flex w-100">
+                                                                    <a href="#" class="btn btn-primary mb-2">Animal</a>
+                                                                    <a href="#" class="btn btn-primary mb-2">Local News</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2">
+                                                                <div class="py-2 icofont_blk d-flex">
+                                                                    <i class="icofont-location-pin text-link"></i> <span>Cat
+                                                                        stuck
+                                                                        in tree</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="row py-4">
+                                                            <div class="col text-center">
+                                                                <p>Language: English</p>
+                                                                <p class="text-center">
+                                                                    <a href="" class="btn btn-secondary">Broadcast
+                                                                        Quality</a>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col border-top border-bottom py-4 d-flex flex-column">
+                                                                <p>Provider: Local News 4</p>
+                                                                <p>Restrictions: No access Boston/Manchester DMA</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-column align-items-end pt-3">
+                                                            <div class="leftPanelPopupBtn_blk">
+                                                                <a href="#" class="btn btn-primary">$350 - Buy Now</a>
+
+                                                            </div>
+                                                            <div class="leftPanelPopupBtn_blk mt-2">
+                                                                <a href="#" class="btn btn-primary">Save for Later</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <div class="rightPanelPopup">
+                                                        <div class="preview_blk mb-2">
+                                                            <img src="img/demoImg.jpg" alt="" class="img-fluid">
+                                                        </div>
+                                                        <div class="rightContDetails">
+                                                            <h4>Flu outbreak presser with Governer Baker</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Nulla quam
+                                                                velit, vulputate eu pharetra nec, mattis ac neque. Duis
+                                                                vulputate
+                                                                commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
+                                                                tortor
+                                                                sed
+                                                                eleifend tristique, tortor mauris molestie elit, et lacinia
+                                                                ipsum
+                                                                quam
+                                                                nec dui. Quisque nec mauris sit amet elit iaculis pretium
+                                                                sit amet
+                                                                quis
+                                                                magna. Aenean velit odio, elementum in tempus ut, vehicula
+                                                                eu diam.
+                                                                Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed
+                                                                felis
+                                                                sodales
+                                                                nec vulputate justo hendrerit. Vivamus varius pretium
+                                                                ligula, a
+                                                                aliquam
+                                                                odio euismod sit amet. Quisque laoreet sem sit amet orci
+                                                                ullamcorper
+                                                                at
+                                                                ultricies metus viverra.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered modal-xxl" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close_blk" data-dismiss="modal" aria-label="Close">
+                                <i class="icofont-close-line"></i>
+                            </button>
+                            <div class="modal-body px-4 py-4">
+                                <div class="row">
+                                    <div class="col-5 border-right">
+                                        <h5>Build Your Listing <div class="badge badge-danger">Live Now!</div>
+                                        </h5>
+                                        <div class="container pt-3">
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Title:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-start form-group">
+                                                <div class="pr-0 col-sm-4">Description:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <textarea name="" id="" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Location:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Restrictions:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Language:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                        <option value="">English</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Quality:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Expected Duration:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Expected End Time:</div>
+
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Tags:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Support Contact:</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row pb-1 align-items-center form-group">
+                                                        <div class="pr-0 col-sm-4">Upload Image:</div>
+                                                        <div class="pl-0 col-sm-8">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="customFileLang"
+                                                                    lang="es">
+                                                                <label class="custom-file-label" for="customFileLang">
+                                                                    
+                                                                    Select Images..
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                            <div class="row pb-1 align-items-center form-group">
+                                                <div class="pr-0 col-sm-4">Price (USD):</div>
+                                                <div class="pl-0 col-sm-8">
+                                                    <div class="input-group mb-0">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fa fa-usd text-link" aria-hidden="true"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input type="number" class="form-control" aria-label="Select Date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1 align-items-end form-group">
+                                                <div class="col-11 text-right">
+                                                    <a href="" class="btn btn-info">Cancle</a>
+                                                    <a href="" class="btn btn-secondary">Post Listing</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h5>Listing Preview</h5>
+                                        <div class="px-3 py-3 border">
+                                            <div class="row">
+                                                <div class="col-6 pr-4">
+                                                    <div class="leftPanelPopup">
+                                                        <ul class="d-flex row rightPanelPopupTime">
+                                                            <li
+                                                                class="col-6 d-flex  flex-column px-2 py-2 border-right border-bottom">
+                                                                <div class="text-center col pt-3">
+                                                                    <a href="#" class="btn btn-danger">Live Now!</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2 border-bottom">
+                                                                <div class="py-2 icofont_blk d-flex">
+                                                                    <i class="icofont-wall-clock text-link"></i><span>Expected
+                                                                        Duration: 15 minutes Expected End: 14:30 -05:00
+                                                                        GMT</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2 border-right">
+                                                                <div
+                                                                    class="text-center flex-wrap justify-content-center d-flex w-100">
+                                                                    <a href="#" class="btn btn-primary mb-2">Animal</a>
+                                                                    <a href="#" class="btn btn-primary mb-2">Local News</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="col-6 d-flex  flex-column px-2 py-2">
+                                                                <div class="py-2 icofont_blk d-flex">
+                                                                    <i class="icofont-location-pin text-link"></i> <span>Cat
+                                                                        stuck
+                                                                        in tree</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="row py-4">
+                                                            <div class="col text-center">
+                                                                <p>Language: English</p>
+                                                                <p class="text-center">
+                                                                    <a href="" class="btn btn-secondary">Broadcast
+                                                                        Quality</a>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-center mt-5 mb-0">Time Live: 00:09:15</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col border-top border-bottom py-4 d-flex flex-column">
+                                                                <p>Provider: Local News 4</p>
+                                                                <p>Restrictions: No access Boston/Manchester DMA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex flex-column align-items-end pt-3">
+                                                            <div class="leftPanelPopupBtn_blk">
+                                                                <a href="#" class="btn btn-primary">$350 - Buy Now</a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <div class="rightPanelPopup">
+                                                        <div class="preview_blk mb-2">
+                                                            <iframe width="100%" height="250px"
+                                                                src="https://www.youtube.com/embed/0RzaXqmkmLM"
+                                                                frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="rightContDetails">
+                                                            <h4>Cat stuck in tree after Hurricane Sandy</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Nulla quam
+                                                                velit, vulputate eu pharetra nec, mattis ac neque. Duis
+                                                                vulputate
+                                                                commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
+                                                                tortor
+                                                                sed
+                                                                eleifend tristique, tortor mauris molestie elit, et lacinia
+                                                                ipsum
+                                                                quam
+                                                                nec dui. Quisque nec mauris sit amet elit iaculis pretium
+                                                                sit amet
+                                                                quis
+                                                                magna. Aenean velit odio, elementum in tempus ut, vehicula
+                                                                eu diam.
+                                                                Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed
+                                                                felis
+                                                                sodales
+                                                                nec vulputate justo hendrerit. Vivamus varius pretium
+                                                                ligula, a
+                                                                aliquam
+                                                                odio euismod sit amet. Quisque laoreet sem sit amet orci
+                                                                ullamcorper
+                                                                at
+                                                                ultricies metus viverra.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
